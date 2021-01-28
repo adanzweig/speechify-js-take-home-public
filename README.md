@@ -46,7 +46,7 @@ type Data = {
 
 Note that with the `type` and `source` properties together,  we should be able to determine how to extract the information contained in the `data` property at high fidelity. This requires an assumption that data derived from a given `source` will have consistent structure, but this is generally a reasonable assumption.
 
-Below are some examples showing how we can use this model to express a wide variety of data. 
+Below are some examples showing how we can use this model to express a wide variety of data. Note that these are just examples for you to get an idea of how the `Data` looks like. In production `Data` can be of any size, and your system needs to handle it in the best way.
 ```typescript
 const text: Data = {
     type: DataType.TXT,
