@@ -1,0 +1,23 @@
+{
+    "extends": "@tsconfig/node12/tsconfig.json",
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "target": "es5",
+        "jsx": "react",
+        "lib": ["dom"],
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "./dist/",
+        "skipLibCheck": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@common": ["./common"],
+            "@common/*": ["./common/*"]
+        }
+    },
+    "include": [
+        "./src/client",
+        "./src/common"
+    ]
+}
