@@ -11,7 +11,7 @@ export type Data = {
 };
 
 // TODO: refine this type to represent a unit of streaming content
-export type StreamChunk = any;
+export type StreamChunk = string;
 
 export interface Speechify {
   addToQueue(data: Data): boolean;
