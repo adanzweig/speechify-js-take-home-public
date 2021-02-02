@@ -45,7 +45,6 @@ export default class MySpeechify implements SpeechifyServer {
       }
       var filtered = sentences.filter(item=>item);
       json = json.concat(filtered);
-      
       jsonfile.writeFile(file, json, function (err) {
         if (err) console.error(err)
       })
